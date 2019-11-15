@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'includes/alert.html' %}
+
+    <div class="row justify-content-center">
+    <div class="col-lg-4 col-md-6 col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title" style="text-align: center">Login PRINCE</h3>
+          <form method="post" novalidate>
+            {% csrf_token %}
+            {% include 'includes/forms.html' %}
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+        <div class="card-footer text-muted text-center">
+          New to Django Boards? <a href="{% url 'signup' %}">Sign up</a>
+        </div>
+      </div>
+      <div class="text-center py-2">
+        <small>
+          <a href="#" class="text-muted">Forgot your password?</a>
+        </small>
+      </div>
+    </div>
+  </div>
+{% endblock %}

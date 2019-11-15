@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Post Detail</title>
+    {% endblock %}
+{% block content %}
+    <h3>{{ posts.title }}</h3>
+    <small>Post Created By : {{ posts.created }}</small>
+    <hr>
+    <p>{{ posts.body }}</p>
+
+    {% if user.is_authenticated %}
+    <form  action="{% url 'like_post' %}" method="post">
+    {% csrf_token %}
+    {% if posts.likes_count == 1 %}
+    <h4> Total Like: {{ posts.likes_count }} </h4>
+    {% elif posts.likes_count > 1 %}
+    <h4> Total Likes: {{ posts.likes_count }} </h4>
+    {% elif posts.likes_count == 0 %}
+    <h4> No likes </h4>
+    {% endif %}
+        {% if is_liked %}
+            {% if calc2 == 0 %}
+            You Like this
+            {% elif calc2 >= 1 %}
+             You and {{ calc2 }} others like this
+             {% endif %}<br>
+            <button type="submit" class="btn btn-danger" name="post_id" value="{{ posts.id }}">DisLike</button>
+        {% else %}
+         {% if posts.likes.count == 1 %}
+             1 like this
+         {% elif posts.likes.count == 0 %}
+             <small> No people like this</small>
+         {% else %}
+             {{ posts.likes.count }} others like this
+         {% endif %}<br>
+
+            <button type="submit" class="btn btn-primary" name="post_id" value="{{ posts.id }}">Like</button>
+
+        {% endif %}
+
+    </form>
+     <div id="favourite_selection" style="padding-top: 2px">
+     {% if is_favourite %}
+         <a href="{% url 'favourite' posts.id %}">
+             <i class="fas fa-heart" style="font-size: 50px;color: purple"></i>
+         </a>
+
+     {% else %}
+         <a href="{% url 'favourite' posts.id %}">
+             <i class="far fa-heart" style="font-size: 50px; color: purple"></i>
+         </a>
+    {% endif %}
+     </div>
+    {% else %}
+    <h4>Login Required</h4>
+    {% endif %}
+
+
+
+
+
+<div class="main-comment-section">
+{% include 'includes/comment_forms.html' %}
+</div>
+{% endblock %}

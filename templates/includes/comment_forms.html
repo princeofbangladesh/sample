@@ -1,0 +1,47 @@
+<div class="container-fluid mt-2">
+<div class="form-group row">
+    <form method="post" action="." class="comment-form" >
+        {% csrf_token %}
+        {{ commentform.as_p }}
+        {% if user.is_authenticated %}
+            <input type="submit" class="btn btn-outline-success" value="Submit">
+        {% else %}
+            <input type="submit" class="btn btn-outline-success" value="Submit" disabled>
+        {% endif %}
+    </form>
+
+</div>
+</div>
+    {{ comments.count }} Comment{{ comments|pluralize }}
+    {% for comment in comments %}
+        <blockquote class="blockquote">
+            <p class="mb-0"> {{ comment.content }}</p>
+        <footer class="blockquote-footer">by
+            <cite title="Source-title"><small>{{ comment.user|capfirst }}</small></cite>
+            <button type="submit" class="reply-btn btn btn-outline-dark btn-sm ml-2">Reply</button>
+        </footer>
+        </blockquote>
+
+        <div class="replied-comments container mt-2 " style="display: none;">
+        {% for reply in comment.replies.all %}
+            <blockquote class="blockquote">
+            <p class="mb-0"> {{ reply.content }}</p>
+        <footer class="blockquote-footer">by
+            <cite title="Source-title"><small>{{ reply.user|capfirst }}</small></cite>
+        </footer>
+        </blockquote>
+        {% endfor %}
+            <div class="form-group row" style="padding-left: 30px">
+                <form method="post" class="reply-form" action=".">
+                    {% csrf_token %}
+                    <input type="hidden" name="reply_id" value="{{ comment.id }}">
+                    {{ commentform.as_p }}
+                    {% if user.is_authenticated %}
+                        <input type="submit" class="btn btn-outline-success" value="Submit">
+                    {% else %}
+                        <input type="submit" class="btn btn-outline-success" value="Submit" disabled>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    {% endfor %}

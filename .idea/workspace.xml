@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef2189f8-85a0-4d93-8714-25c5a71de7d2" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="sqlite_sequence: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ProjectId" id="1S4Eg2jYAj3iiSw0chXABodReFG" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Prince" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Django Project\PyCharm\sample\Prince" />
+      <recent name="D:\Django Project\PyCharm\sample" />
+      <recent name="C:\Users\PRINCE\PycharmProjects\sample\templates" />
+      <recent name="C:\Users\PRINCE\PycharmProjects\sample\Prince\static\js" />
+      <recent name="C:\Users\PRINCE\PycharmProjects\sample\Prince\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PRINCE\PycharmProjects\sample\templates\includes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="sample" type="Python.DjangoServer" factoryName="Django server">
+      <module name="sample" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="sample.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@43d69fb0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@43d69fb0" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2225441d" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef2189f8-85a0-4d93-8714-25c5a71de7d2" name="Default Changelist" comment="" />
+      <created>1570814576678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570814576678</updated>
+      <workItem from="1570814584707" duration="4447000" />
+      <workItem from="1570901551047" duration="2569000" />
+      <workItem from="1570908311695" duration="1290000" />
+      <workItem from="1570983517943" duration="3447000" />
+      <workItem from="1571047353605" duration="1329000" />
+      <workItem from="1571096350202" duration="3516000" />
+      <workItem from="1571129419279" duration="2264000" />
+      <workItem from="1571155459266" duration="4445000" />
+      <workItem from="1571183108012" duration="2403000" />
+      <workItem from="1571217046884" duration="407000" />
+      <workItem from="1571217482784" duration="1000" />
+      <workItem from="1571217524082" duration="2753000" />
+      <workItem from="1571247348794" duration="2425000" />
+      <workItem from="1571304201705" duration="3780000" />
+      <workItem from="1571309933598" duration="2395000" />
+      <workItem from="1571333381361" duration="645000" />
+      <workItem from="1571335349652" duration="1141000" />
+      <workItem from="1571372470456" duration="7000" />
+      <workItem from="1571402129041" duration="779000" />
+      <workItem from="1571419110907" duration="611000" />
+      <workItem from="1571421457048" duration="1111000" />
+      <workItem from="1571466272522" duration="48000" />
+      <workItem from="1571477053728" duration="1270000" />
+      <workItem from="1571478584636" duration="482000" />
+      <workItem from="1571482442270" duration="2150000" />
+      <workItem from="1571503791232" duration="3445000" />
+      <workItem from="1571558807988" duration="530000" />
+      <workItem from="1571593637788" duration="354000" />
+      <workItem from="1571668670327" duration="114000" />
+      <workItem from="1571769489341" duration="1535000" />
+      <workItem from="1571847182443" duration="668000" />
+      <workItem from="1571906613654" duration="27000" />
+      <workItem from="1571906685397" duration="130000" />
+      <workItem from="1571907307974" duration="110000" />
+      <workItem from="1572198837427" duration="1141000" />
+      <workItem from="1572258780184" duration="2070000" />
+      <workItem from="1572286161915" duration="244000" />
+      <workItem from="1572286630095" duration="2329000" />
+      <workItem from="1572305024372" duration="2097000" />
+      <workItem from="1572341323283" duration="947000" />
+      <workItem from="1572455486664" duration="637000" />
+      <workItem from="1572459067291" duration="2895000" />
+      <workItem from="1572564811327" duration="2546000" />
+      <workItem from="1572597153288" duration="746000" />
+      <workItem from="1572628530786" duration="8035000" />
+      <workItem from="1572651512590" duration="657000" />
+      <workItem from="1572770443381" duration="328000" />
+      <workItem from="1572770844229" duration="1590000" />
+      <workItem from="1573744915011" duration="897000" />
+      <workItem from="1573847845459" duration="43000" />
+      <workItem from="1573856335305" duration="301000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

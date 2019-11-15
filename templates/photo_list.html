@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %}
+    <title>PRINCE</title>
+    {% endblock %}
+
+{% block content %}
+
+    <div class="messages">
+    {% if messages %}
+        {% for message in messages %}
+            <p class="alert alert-{{ message.tags }}">
+            {{ message }}
+            </p>
+        {% endfor %}
+    {% endif %}
+    </div>
+
+    <div class="row">
+    {% for p in posts %}
+    <div class="col-md-6">
+        <div class="img-thumbnail">
+            <a href="{% url 'details_post' p.id p.slug %}">{{ p.title }}</a><strong style="float: right">{{ p.created|naturalday }}</strong><br>
+        Author: {{ p.author }}<br>
+            {{ p.body }}
+        </div><br>
+
+
+    </div>
+    {% endfor %}
+    </div>
+{% endblock %}
